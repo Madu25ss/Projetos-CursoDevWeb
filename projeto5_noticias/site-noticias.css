@@ -1,0 +1,246 @@
+/*Estrutura site*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif ;
+    background: #fff url('./imagens-noticias-cidade/fundo.png') repeat-x;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+} 
+
+#topo {
+    height: 150px;
+    background: url('./imagens-noticias-cidade/detalhe-topo.png') no-repeat right top;
+    padding-top: 25px;
+    margin-right: -90px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url('./imagens-noticias-cidade/logo.png') no-repeat  top;
+    text-indent: -3000px;
+}
+
+/*barra vertical do topo*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url('./imagens-noticias-cidade/divisor.png') no-repeat  center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #container a#home,
+body.brasil #container a#brasil,
+body.internacional #container a#internacional,
+body.economia #container a#economia,
+body.saude #container a#saude,
+body.ciencia #container a#ciencia,
+body.fotos #container a#fotos{
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/*colunas primario secundario e lateral*/
+
+#conteudo {
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+ #primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+
+#duas-colunas #primario {
+    width: 555px;
+}
+
+#uma-colunas #primario {
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/*caixa lateral*/
+.caixa, .caixa-email {
+    background: #f3f3f3 url('./imagens-noticias-cidade/fundo-caixa.png');
+    margin: 10px 0;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    background: #294c71;
+    color: #fff;
+    padding: 8px 5px;
+}
+
+.caixa-conteudo, .caixa-news-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.caixa-conteudo .marcador{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+
+.caixa-conteudo .marcador:hover {
+    color: #a1a1a1;
+    background: #f9f9f9 url('./imagens-noticias-cidade/marcador.png') no-repeat left center;
+    padding-left: 20px;
+}
+
+/*caixa email */
+
+input#cadastrar {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    width: 125px;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+/*imagens */
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* formatando cabeçalhos */
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+}
+
+/*caixa de noticias*/
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+}
+
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+    font-size: 0.7em;
+    color: #000;
+}
+
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+/*link vermelho */
+.link-vermelho {
+    color: #db0642;
+}
+
+.link-vermelho:hover{
+    color: #eb9bb1;
+}
+/*rodape*/
+#caixa-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
